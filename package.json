@@ -23,6 +23,7 @@
     "supertest": "^3.0.0"
   },
   "dependencies": {
-    "koa": "^2.0.0-alpha.8"
+    "koa": "^2.0.0-alpha.8",
+    "koa-basic-auth": "^1.1.2"
   }
 }
