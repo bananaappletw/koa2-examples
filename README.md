@@ -5,6 +5,13 @@ Migrate from https://github.com/koajs/examples
 
   A repository containing small examples to illustrate the use of Koa2
   for creating web applications and other HTTP servers.
+
+# Usage (Babel required)
+
+```bash
+cd 404/
+babel-node app.js
+```
   
 # Running tests
 

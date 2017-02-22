@@ -1,5 +1,5 @@
-const Koa = require('koa');
-const app = module.exports = new Koa();
+import Koa from 'koa';
+const app = new Koa();
 
 app.use(async function pageNotFound (ctx, next) {
   try {
@@ -15,6 +15,7 @@ app.use(async function pageNotFound (ctx, next) {
         ctx.body = '<p>Page Not Found</p>';
         break;
       case 'json':
+        ctx.type = 'json';
         ctx.body = {
           message: 'Page Not Found'
         };
@@ -24,9 +25,7 @@ app.use(async function pageNotFound (ctx, next) {
         ctx.body = 'Page Not Found';
     }
   }
-
-  // we need to explicitly set 404 here
-  // so that koa doesn't assign 200 on body=
 });
 
 if (!module.parent) app.listen(3000);
+export default app;
