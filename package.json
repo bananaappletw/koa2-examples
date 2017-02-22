@@ -1,0 +1,13 @@
+{
+  "name": "koa2-examples",
+  "version": "0.0.1",
+  "description": "Examples using Koa2",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": "https://github.com/bananaappletw/koa2-examples",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bananaappletw/koa2-examples/issues"
+  }
+}
