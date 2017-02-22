@@ -9,5 +9,14 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bananaappletw/koa2-examples/issues"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "semistandard": "^9.2.1",
+    "should": "^11.2.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "koa": "^2.0.0-alpha.8"
   }
 }
