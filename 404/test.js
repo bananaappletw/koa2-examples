@@ -1,7 +1,6 @@
-
 import app from './app';
 import supertest from 'supertest';
-var request = supertest.agent(app.listen());
+const request = supertest.agent(app.listen());
 
 describe('404', function () {
   describe('when GET /', function () {
