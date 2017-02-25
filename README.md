@@ -32,6 +32,7 @@ make test
  - [csrf](csrf) - middleware csrf example
  - [errors](errors) - error handling & propagation
  - [flash-messages](flash-messages) - flash example
+ - [hello-world](hello-world) - hello world application
 
 ## Example Repositories
 
