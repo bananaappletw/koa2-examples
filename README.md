@@ -28,5 +28,16 @@ make test
  - [body-parsing](body-parsing) - request body parsing
  - [compose](compose) - compose middlewares example
 
+## Example Repositories
+
+ - [koa2-example](https://github.com/17koa/koa2-example)
+ - [koa2-example-app](https://github.com/OrKoN/koa2-example-app)
+ - [simple-koa2-example](https://github.com/chentsulin/simple-koa2-example)
+
+## Boilerplates
+
+ - [koa2-boilerplate](https://github.com/geekplux/koa2-boilerplate) - A minimal boilerplate of koa v2 development
+
 [travis-image]: https://travis-ci.org/bananaappletw/koa2-examples.svg?branch=master
 [travis-url]: https://travis-ci.org/bananaappletw/koa2-examples
+
