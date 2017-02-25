@@ -31,6 +31,7 @@ make test
  - [cookies](cookies) - cookie usage example
  - [csrf](csrf) - middleware csrf example
  - [errors](errors) - error handling & propagation
+ - [flash-messages](flash-messages) - flash example
 
 ## Example Repositories
 
