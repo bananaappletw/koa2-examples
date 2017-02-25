@@ -29,6 +29,7 @@ make test
  - [compose](compose) - compose middlewares example
  - [conditional-middleware](conditional-middleware) - shows how middleware may be conditionally applied
  - [cookies](cookies) - cookie usage example
+ - [csrf](csrf) - middleware csrf example
 
 ## Example Repositories
 
