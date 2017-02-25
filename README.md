@@ -26,6 +26,7 @@ make test
  - [base-auth](base-auth) - middleware base auth example
  - [blog](blog) - multi-route & view rendering
  - [body-parsing](body-parsing) - request body parsing
+ - [compose](compose) - compose middlewares example
 
 [travis-image]: https://travis-ci.org/bananaappletw/koa2-examples.svg?branch=master
 [travis-url]: https://travis-ci.org/bananaappletw/koa2-examples
