@@ -5,7 +5,7 @@ const request = supertest.agent(app.listen());
 describe('Body Parsing', () => {
   describe('POST /uppercase', () => {
     describe('with JSON', () => {
-      it('should work', (done) => {
+      it('should work', done => {
         request
         .post('/uppercase')
         .send({ name: 'tobi' })
@@ -15,7 +15,7 @@ describe('Body Parsing', () => {
     });
 
     describe('with urlencoded', () => {
-      it('should work', (done) => {
+      it('should work', done => {
         request
         .post('/uppercase')
         .send('name=tj')
@@ -25,7 +25,7 @@ describe('Body Parsing', () => {
     });
 
     describe('when length > limit', () => {
-      it('should 413', (done) => {
+      it('should 413', done => {
         request
         .post('/json')
         .send({ name: Array(5000).join('a') })
@@ -34,7 +34,7 @@ describe('Body Parsing', () => {
     });
 
     describe('when no name is sent', () => {
-      it('should 400', (done) => {
+      it('should 400', done => {
         request
         .post('/uppsercase')
         .send('age=10')

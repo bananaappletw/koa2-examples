@@ -4,7 +4,7 @@ const request = supertest.agent(app.listen());
 
 describe('404', () => {
   describe('when GET /', () => {
-    it('should return the 404 page', (done) => {
+    it('should return the 404 page', done => {
       request
       .get('/')
       .expect(404)

@@ -4,7 +4,7 @@ const request = supertest.agent(app.listen());
 
 describe('Koa Basic Auth', () => {
   describe('with no credentials', () => {
-    it('should `throw` 401', (done) => {
+    it('should `throw` 401', done => {
       request
         .get('/')
         .expect(401, done);
@@ -12,7 +12,7 @@ describe('Koa Basic Auth', () => {
   });
 
   describe('with invalid credentials', () => {
-    it('should `throw` 401', (done) => {
+    it('should `throw` 401', done => {
       request
         .get('/')
         .auth('user', 'invalid password')
@@ -21,7 +21,7 @@ describe('Koa Basic Auth', () => {
   });
 
   describe('with valid credentials', () => {
-    it('should call the next middleware', (done) => {
+    it('should call the next middleware', done => {
       request
         .get('/')
         .auth('tj', 'tobi')

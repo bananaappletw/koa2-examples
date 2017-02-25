@@ -4,7 +4,7 @@ const request = supertest.agent(app.listen());
 
 describe('Blog', () => {
   describe('GET /', () => {
-    it('should see title "Posts"', (done) => {
+    it('should see title "Posts"', done => {
       request
       .get('/')
       .expect(200, (err, res) => {
@@ -15,7 +15,7 @@ describe('Blog', () => {
         done();
       });
     });
-    it('should see 0 post', (done) => {
+    it('should see 0 post', done => {
       request
       .get('/')
       .expect(200, (err, res) => {
@@ -28,7 +28,7 @@ describe('Blog', () => {
     });
   });
   describe('POST /post/new', () => {
-    it('should create post and redirect to /', (done) => {
+    it('should create post and redirect to /', done => {
       request
       .post('/post')
       .send({title: 'Title', body: 'Contents'})
@@ -41,7 +41,7 @@ describe('Blog', () => {
     });
   });
   describe('GET /post/0', () => {
-    it('should see post', (done) => {
+    it('should see post', done => {
       request
       .get('/post/0')
       .expect(200, (err, res) => {
