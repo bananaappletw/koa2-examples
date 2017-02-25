@@ -30,6 +30,7 @@ make test
  - [conditional-middleware](conditional-middleware) - shows how middleware may be conditionally applied
  - [cookies](cookies) - cookie usage example
  - [csrf](csrf) - middleware csrf example
+ - [errors](errors) - error handling & propagation
 
 ## Example Repositories
 
