@@ -33,6 +33,7 @@ make test
  - [errors](errors) - error handling & propagation
  - [flash-messages](flash-messages) - flash example
  - [hello-world](hello-world) - hello world application
+ - [templates](templates) - simple view rendering
 
 ## Example Repositories
 
