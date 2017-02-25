@@ -8,7 +8,8 @@ describe('404', () => {
       request
       .get('/')
       .expect(404)
-      .expect(/Page Not Found/, done);
+      .expect(/Page Not Found/);
+      done();
     });
   });
 });

@@ -28,7 +28,7 @@ app
 
 app.use(async (ctx, next) => {
   if (ctx.is('application/json')) {
-    this.body = ctx.request.body;
+    ctx.body = ctx.request.body;
   }
   await next();
 });

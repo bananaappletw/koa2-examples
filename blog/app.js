@@ -62,7 +62,7 @@ async function add (ctx) {
 
 async function show (ctx, next) {
   var post = posts[ctx.params.id];
-  if (!post) this.throw(404, 'invalid post id');
+  if (!post) ctx.throw(404, 'invalid post id');
   await ctx.render('show', { post: post });
 }
 
