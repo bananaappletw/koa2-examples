@@ -27,6 +27,7 @@ make test
  - [blog](blog) - multi-route & view rendering
  - [body-parsing](body-parsing) - request body parsing
  - [compose](compose) - compose middlewares example
+ - [conditional-middleware](conditional-middleware) - shows how middleware may be conditionally applied
 
 ## Example Repositories
 
