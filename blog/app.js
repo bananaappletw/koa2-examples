@@ -30,7 +30,6 @@ router.post('/post', create);
 
 app
   .use(views(path.join(__dirname, 'views'), {
-    extention: 'html',
     map: {
       html: 'swig'
     }
