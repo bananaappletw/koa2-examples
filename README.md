@@ -28,6 +28,7 @@ make test
  - [body-parsing](body-parsing) - request body parsing
  - [compose](compose) - compose middlewares example
  - [conditional-middleware](conditional-middleware) - shows how middleware may be conditionally applied
+ - [cookies](cookies) - cookie usage example
 
 ## Example Repositories
 
