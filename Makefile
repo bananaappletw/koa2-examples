@@ -1,9 +1,10 @@
 lint:
-	@./node_modules/.bin/semistandard --env mocha
+	@./node_modules/.bin/eslint .
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha \
-		--compilers js:babel-core/register \
+		--require babel-polyfill \
+		--compilers js:babel-register \
 		--harmony \
 		--reporter spec \
 		--require should \

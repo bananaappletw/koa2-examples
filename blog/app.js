@@ -41,7 +41,7 @@ app
  * Post listing.
  */
 
-async function list (ctx, next) {
+async function list (ctx) {
   await ctx.render('list', {
     posts: posts
   });
@@ -59,7 +59,7 @@ async function add (ctx) {
  * Show post :id.
  */
 
-async function show (ctx, next) {
+async function show (ctx) {
   var post = posts[ctx.params.id];
   if (!post) ctx.throw(404, 'invalid post id');
   await ctx.render('show', { post: post });

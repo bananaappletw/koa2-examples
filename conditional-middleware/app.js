@@ -26,7 +26,7 @@ function ignoreAssets (mw) {
 
 app.use(ignoreAssets(logger()));
 
-app.use(async function (ctx, next) {
+app.use(async function (ctx) {
   ctx.body = 'Hello World';
 });
 
