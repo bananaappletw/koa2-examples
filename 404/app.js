@@ -8,6 +8,7 @@ app.use(async function pageNotFound (ctx, next) {
     if (status === 404) ctx.throw(404);
   } catch (err) {
     if (err.status !== 404) return;
+    ctx.status = err.status;
     switch (ctx.accepts('html', 'json')) {
       case 'html':
         ctx.type = 'html';
