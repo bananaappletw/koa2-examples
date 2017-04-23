@@ -11,17 +11,14 @@
     "url": "https://github.com/bananaappletw/koa2-examples/issues"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.0",
-    "babel-eslint": "^7.2.1",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-latest": "^6.24.0",
-    "babel-register": "^6.24.0",
-    "eslint": "^3.18.0",
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.19.0",
     "mocha": "^3.2.0",
     "should": "^3.3.2",
     "supertest": "^3.0.0"
   },
   "dependencies": {
+    "co": "^4.6.0",
     "ejs": "^2.5.6",
     "koa": "^2.2.0",
     "koa-basic-auth": "^1.1.2",

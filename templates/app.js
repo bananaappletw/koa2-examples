@@ -1,7 +1,7 @@
-import path from 'path';
-import views from 'koa-views';
-import Koa from 'koa';
-const app = new Koa();
+const path = require('path');
+const views = require('koa-views');
+const Koa = require('koa');
+const app = module.exports = new Koa();
 
 // setup views, appending .ejs
 // when no extname is given to render()
@@ -29,4 +29,3 @@ app.use(async (ctx) => {
 });
 
 if (!module.parent) app.listen(4000);
-export default app;

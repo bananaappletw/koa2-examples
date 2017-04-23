@@ -3,8 +3,6 @@ lint:
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha \
-		--require babel-polyfill \
-		--compilers js:babel-register \
 		--harmony \
 		--reporter spec \
 		--require should \

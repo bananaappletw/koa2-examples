@@ -1,6 +1,5 @@
-import app from './app';
-import supertest from 'supertest';
-const request = supertest.agent(app.listen());
+const app = require('./app');
+const request = require('supertest').agent(app.listen());
 
 describe('Flash Messages', () => {
   it('GET should return an empty array', done => {

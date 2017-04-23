@@ -12,9 +12,9 @@
  *   ]))
 */
 
-import compose from 'koa-compose';
-import Koa from 'koa';
-const app = new Koa();
+const compose = require('koa-compose');
+const Koa = require('koa');
+const app = module.exports = new Koa();
 
 // x-response-time
 
@@ -55,4 +55,3 @@ var all = compose([
 app.use(all);
 
 if (!module.parent) app.listen(3000);
-export default app;

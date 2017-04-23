@@ -1,11 +1,11 @@
-import session from 'koa-generic-session';
-import convert from 'koa-convert';
-import bodyParser from 'koa-bodyparser';
-import Koa from 'koa';
-import Csrf from 'koa-csrf';
-import Router from 'koa-router';
+const session = require('koa-generic-session');
+const convert = require('koa-convert');
+const bodyParser = require('koa-bodyparser');
+const Koa = require('koa');
+const Csrf = require('koa-csrf').default;
+const Router = require('koa-router');
 
-const app = new Koa();
+const app = module.exports = new Koa();
 const csrf = new Csrf();
 const router = new Router();
 
@@ -53,4 +53,3 @@ async function post (ctx) {
 }
 
 if (!module.parent) app.listen(3000);
-export default app;

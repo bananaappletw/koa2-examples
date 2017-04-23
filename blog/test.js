@@ -1,6 +1,5 @@
-import app from './app';
-import supertest from 'supertest';
-const request = supertest.agent(app.listen());
+const app = require('./app');
+const request = require('supertest').agent(app.listen());
 
 describe('Blog', () => {
   describe('GET /', () => {

@@ -1,7 +1,6 @@
-import Koa from 'koa';
-import auth from 'koa-basic-auth';
-const app = new Koa();
-
+const auth = require('koa-basic-auth');
+const Koa = require('koa');
+const app = module.exports = new Koa();
 // custom 401 handling
 
 app.use(async (ctx, next) => {
@@ -29,4 +28,3 @@ app.use(async (ctx) => {
 });
 
 if (!module.parent) app.listen(3000);
-export default app;

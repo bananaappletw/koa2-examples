@@ -3,8 +3,8 @@
  * both as a cookie and as a response string.
  */
 
-import Koa from 'koa';
-const app = new Koa();
+const Koa = require('koa');
+const app = module.exports = new Koa();
 
 app.use(async (ctx) => {
   var n = ~~ctx.cookies.get('view') + 1;
@@ -13,4 +13,3 @@ app.use(async (ctx) => {
 });
 
 if (!module.parent) app.listen(3000);
-export default app;

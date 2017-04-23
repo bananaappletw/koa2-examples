@@ -3,13 +3,13 @@
  * Module dependencies.
  */
 
-import path from 'path';
-import logger from 'koa-logger';
-import Router from 'koa-router';
-import views from 'koa-views';
-import bodyParser from 'koa-bodyparser';
-import Koa from 'koa';
-const app = new Koa();
+const path = require('path');
+const logger = require('koa-logger');
+const Router = require('koa-router');
+const views = require('koa-views');
+const bodyParser = require('koa-bodyparser');
+const Koa = require('koa');
+const app = module.exports = new Koa();
 const router = new Router();
 
 // "database"
@@ -80,4 +80,3 @@ async function create (ctx) {
 // listen
 
 if (!module.parent) app.listen(3000);
-export default app;

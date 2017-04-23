@@ -1,5 +1,5 @@
-import Koa from 'koa';
-const app = new Koa();
+const Koa = require('koa');
+const app = module.exports = new Koa();
 
 // look ma, error propagation!
 
@@ -37,4 +37,3 @@ app.on('error', (err) => {
 });
 
 if (!module.parent) app.listen(3000);
-export default app;

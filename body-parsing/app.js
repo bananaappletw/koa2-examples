@@ -1,7 +1,6 @@
-
-import Koa from 'koa';
-import bodyParser from 'koa-bodyparser';
-const app = new Koa();
+const Koa = require('koa');
+const bodyParser = require('koa-bodyparser');
+const app = module.exports = new Koa();
 app.use(bodyParser({'jsonLimit': '1kb'}));
 
 // POST .name to /uppercase
@@ -16,4 +15,3 @@ app.use(async (ctx, next) => {
 });
 
 if (!module.parent) app.listen(3000);
-export default app;

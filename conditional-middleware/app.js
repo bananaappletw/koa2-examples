@@ -1,6 +1,6 @@
-import logger from 'koa-logger';
-import Koa from 'koa';
-const app = new Koa();
+const logger = require('koa-logger');
+const Koa = require('koa');
+const app = module.exports = new Koa();
 
 // passing any middleware to this middleware
 // will make it conditional, and will not be used

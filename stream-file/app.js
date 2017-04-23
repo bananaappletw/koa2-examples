@@ -1,7 +1,8 @@
-import Koa from 'koa';
-const app = new Koa();
-import fs from 'fs';
-import path, {extname} from 'path';
+var Koa = require('koa');
+var fs = require('fs');
+var app = module.exports = new Koa();
+var path = require('path');
+var extname = path.extname;
 
 // try GET /app.js
 
@@ -33,4 +34,3 @@ function stat (file) {
     });
   });
 }
-export default app;

@@ -3,10 +3,10 @@
  * Only uses JSON for simplicity.
  */
 
-import rawBody from 'raw-body';
-import session from 'koa-session';
-import Koa from 'koa';
-const app = new Koa();
+const rawBody = require('raw-body');
+const session = require('koa-session');
+const Koa = require('koa');
+const app = module.exports = new Koa();
 
 // required for signed cookie sessions
 app.keys = ['key1', 'key2'];
@@ -40,4 +40,3 @@ app.use(async (ctx, next) => {
 });
 
 if (!module.parent) app.listen(3000);
-export default app;
