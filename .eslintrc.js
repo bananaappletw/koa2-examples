@@ -1,13 +1,16 @@
 module.exports = {
+    "parser": "babel-eslint",
     "extends": "eslint:recommended",
     "env": {
       "mocha": true,
       "node": true,
       "es6": true
     },
-    "parser": "babel-eslint",
+    "parserOptions":{
+      "ecmaVersion": 7
+    },
     "rules": {
       "no-console": "off",
-      "require-yield": "off"
+      "semi": 2
     }
 };
