@@ -34,6 +34,7 @@ make test
  - [flash-messages](flash-messages) - flash example
  - [hello-world](hello-world) - hello world application
  - [stream-file](stream-file) - simple file streaming
+ - [stream-view](stream-view) - view streaming
  - [templates](templates) - simple view rendering
 
 ## Example Repositories
