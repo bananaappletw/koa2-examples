@@ -1,27 +1,26 @@
 'use strict';
 
 const Readable = require('stream').Readable;
-const co = require('co');
 
 module.exports = class View extends Readable {
 
-  constructor(context) {
+  constructor() {
     super();
 
     // render the view on a different loop
-    co.call(this, this.render).catch(context.onerror);
+    this.render();
   }
 
   _read() {}
 
-  *render() {
+  async render() {
     // push the <head> immediately
     this.push('<!DOCTYPE html><html><head><title>Hello World</title></head>');
 
     // render the <body> on the next tick
-    const body = yield done => {
-      setImmediate(() => done(null, '<p>Hello World</p>'));
-    };
+    const body = await new Promise( resolve => {
+      setImmediate(() => resolve('<p>Hello World</p>'));
+    });
     this.push('<body>' + body + '</body>');
 
     // close the document
