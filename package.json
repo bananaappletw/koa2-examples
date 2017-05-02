@@ -32,6 +32,7 @@
     "koa-session": "^3.4.0",
     "koa-views": "^5.2.0",
     "raw-body": "^2.2.0",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "streaming-json-stringify": "^3.1.0"
   }
 }
