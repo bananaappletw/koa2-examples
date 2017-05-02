@@ -25,16 +25,13 @@ app.use(async ctx => {
   await fs.mkdir(tmpdir);
 
   // list of all the files
-  const files = [];
-  let file;
+  const files = parts.files.map(part => tmpdir + part.filename);
 
   // take each part as a stream
   for(let part of parts.files) {
-    // filename for this part
-    files.push(file = path.join(tmpdir, part.filename));
     // save the file
     await new Promise((resolve, reject) => {
-      saveTo(part,file, (err, data) => {
+      saveTo(part, tmpdir + part.filename, (err, data) => {
         if(err) reject(err);
         resolve(data);
       });
@@ -42,7 +39,7 @@ app.use(async ctx => {
   }
 
   // return all the filenames as an array
-  // after all the files have finished downloading
+  // after all the files have finished uploading
   ctx.response.body = files;
 });
 
