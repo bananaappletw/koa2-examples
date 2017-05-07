@@ -2,7 +2,7 @@
 
 Stream a out Javascript objects. To invoke, the following command begins listening on localhost:3000.
 
-    node --harmony app.js
+    node app.js
 
 To see results:
 
