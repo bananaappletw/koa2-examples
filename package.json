@@ -31,6 +31,7 @@
     "koa-router": "^7.0.1",
     "koa-session": "^3.4.0",
     "koa-views": "^5.2.0",
+    "koa-static": "^3.0.0",
     "raw-body": "^2.2.0",
     "swig": "^1.4.2",
     "streaming-json-stringify": "^3.1.0",
