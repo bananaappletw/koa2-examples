@@ -32,6 +32,9 @@
     "koa-session": "^3.4.0",
     "koa-views": "^5.2.0",
     "raw-body": "^2.2.0",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "co-fs": "^1.2.0",
+    "async-busboy": "^0.4.0",
+    "save-to": "^1.0.3"
   }
 }
