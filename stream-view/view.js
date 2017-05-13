@@ -4,11 +4,11 @@ const Readable = require('stream').Readable;
 
 module.exports = class View extends Readable {
 
-  constructor(ctx) {
+  constructor() {
     super();
 
     // render the view on a different loop
-    this.render().catch(ctx.onerror);
+    this.render();
   }
 
   _read() {}
