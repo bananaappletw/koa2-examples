@@ -1,3 +1,5 @@
+all: lint test
+
 lint:
 	@./node_modules/.bin/eslint .
 

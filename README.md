@@ -25,8 +25,7 @@ node app.js
 # Running tests
 
 ```bash
-make lint
-make test
+make
 ```
 
 ## Included Examples
