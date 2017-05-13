@@ -2,7 +2,7 @@ const session = require('koa-generic-session');
 const convert = require('koa-convert');
 const bodyParser = require('koa-bodyparser');
 const Koa = require('koa');
-const Csrf = require('koa-csrf').default;
+const Csrf = require('koa-csrf');
 const Router = require('koa-router');
 
 const app = module.exports = new Koa();

@@ -18,25 +18,25 @@
     "supertest": "^3.0.0"
   },
   "dependencies": {
+    "async-busboy": "^0.4.0",
+    "co-fs": "^1.2.0",
     "ejs": "^2.5.6",
     "koa": "^2.2.0",
     "koa-basic-auth": "^1.1.2",
     "koa-bodyparser": "^2.3.0",
     "koa-compose": "^3.2.1",
     "koa-convert": "^1.2.0",
-    "koa-csrf": "^3.0.4",
+    "koa-csrf": "^3.0.6",
     "koa-generic-session": "^1.11.5",
     "koa-logger": "^2.0.1",
     "koa-route": "^2.4.2",
     "koa-router": "^7.0.1",
     "koa-session": "^3.4.0",
-    "koa-views": "^5.2.0",
     "koa-static": "^3.0.0",
+    "koa-views": "^5.2.0",
     "raw-body": "^2.2.0",
-    "swig": "^1.4.2",
+    "save-to": "^1.0.3",
     "streaming-json-stringify": "^3.1.0",
-    "co-fs": "^1.2.0",
-    "async-busboy": "^0.4.0",
-    "save-to": "^1.0.3"
+    "swig": "^1.4.2"
   }
 }
